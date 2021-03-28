@@ -1,8 +1,8 @@
-f29426ad73b8ba4eb8f3fa4f53255083 *DESCRIPTION
+68d2ae45ba9a84ae41436a63288f3964 *DESCRIPTION
 4854e5d0dfa03e45bd34c092e0b8247a *NAMESPACE
-a44484842583cc9989b68a808ea60b3e *NEWS
+2476efbcbe33faa473a29e2363fc2b89 *NEWS
 640198991f7e845d42fa6342c6f9d32b *R/Fstats.R
-1e6c2daacf32b6c7c402e4836eae1d95 *R/RcppExports.R
+124f71eba61f4893601fefa803615db8 *R/RcppExports.R
 3cd1faef92fa7ff4cd9ab724f54588e9 *R/breakpoints.R
 83ebfbfce67826d4de1057f877032de1 *R/critvals-monitoring.R
 acace562e7c072e24def7367f4f16087 *R/critvals.R
@@ -32,7 +32,7 @@ a6623da88dffd995f0921cbdb078e6f7 *data/durab.rda
 599a066f11cde46e37aa6ae53ad375ec *inst/CITATION
 c8d0dcb16e040ff2815632ef7393ca00 *inst/doc/strucchange-intro.R
 7d5d653c3f02a4bdb39c39e40c353d24 *inst/doc/strucchange-intro.Rnw
-28c4629f14443bfbdcf9784c5ea03e25 *inst/doc/strucchange-intro.pdf
+0791d3095270ca184544d785a81839c7 *inst/doc/strucchange-intro.pdf
 5afc3ad081d75ce8d2d13c0d7be42b89 *man/BostonHomicide.Rd
 5ff562b597ec94367c62cb6303dc8e61 *man/DJIA.Rd
 4cfee4fc225a86e83d148d274a2095a2 *man/Fstats.Rd
@@ -76,10 +76,10 @@ e0ceabb50b1a826b83f94ab6fadf9033 *man/strucchange.internal.Rd
 c969070d460a20a2d6064945478a9499 *src/Makevars
 2a6f9e9e044a78154d3cfda5936d6f48 *src/Makevars.orig
 2a6f9e9e044a78154d3cfda5936d6f48 *src/Makevars.win
-d0163899088c1e1f1567c4ae5f4b5da9 *src/RcppExports.cpp
-b290b03d8c684cea0640d9d3eb5c6ed6 *src/breakpoints.cpp
-ed388776e48c977f53c17f213876e353 *src/efp.cpp
-afe46cacdc3091a1d9ced74f6a0d4c24 *src/fstats.cpp
+0bfd60ba2319581dbb3f94208f9af0f2 *src/RcppExports.cpp
+61498bde9aa675cb8979c5ce9374842f *src/breakpoints.cpp
+ac19a059c5e4fab9098297cda2549708 *src/efp.cpp
+ab28099b6ed77eb6915de16c210ab7a8 *src/fstats.cpp
 7e67e85042bc61134b14f7d8ab901da8 *src/recresid.cpp
 2792d4612a12d520fd1dabb8178a1aee *src/recresid.h
 7a61882a9bf128fc22e768c42e7c47da *src/rootmatrix.cpp
