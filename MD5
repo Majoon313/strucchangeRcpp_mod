@@ -1,6 +1,6 @@
-68d2ae45ba9a84ae41436a63288f3964 *DESCRIPTION
+92ffe8e7f7d3cd292d34291029a88f86 *DESCRIPTION
 4854e5d0dfa03e45bd34c092e0b8247a *NAMESPACE
-2476efbcbe33faa473a29e2363fc2b89 *NEWS
+4c384cc747167c3274a4614d6040e4fc *NEWS
 640198991f7e845d42fa6342c6f9d32b *R/Fstats.R
 124f71eba61f4893601fefa803615db8 *R/RcppExports.R
 3cd1faef92fa7ff4cd9ab724f54588e9 *R/breakpoints.R
@@ -32,7 +32,7 @@ a6623da88dffd995f0921cbdb078e6f7 *data/durab.rda
 599a066f11cde46e37aa6ae53ad375ec *inst/CITATION
 c8d0dcb16e040ff2815632ef7393ca00 *inst/doc/strucchange-intro.R
 7d5d653c3f02a4bdb39c39e40c353d24 *inst/doc/strucchange-intro.Rnw
-0791d3095270ca184544d785a81839c7 *inst/doc/strucchange-intro.pdf
+640f021c4532347653e7435e8b1d2a2f *inst/doc/strucchange-intro.pdf
 5afc3ad081d75ce8d2d13c0d7be42b89 *man/BostonHomicide.Rd
 5ff562b597ec94367c62cb6303dc8e61 *man/DJIA.Rd
 4cfee4fc225a86e83d148d274a2095a2 *man/Fstats.Rd
@@ -86,8 +86,8 @@ ab28099b6ed77eb6915de16c210ab7a8 *src/fstats.cpp
 29aa35eb3cb90dd9b5cbd6dd1f0ceb32 *src/rootmatrix.h
 861dcbc5766f6d36e11d1f5e48a7cba8 *tests/Examples/strucchange-Ex.Rout.save
 f49dd829d0cef0d8fd1f49fb9965e25c *tests/Examples/strucchange-Ex.Rout.save.orig
-80c0ae5052d41c16b06286c8b855a4bd *tests/strucchange-tests.R
-1b5c4072d8a9d6d403c7fa49115c6c1c *tests/strucchange-tests.Rout.save
+feeb10450a789a9a04789743126d7712 *tests/strucchange-tests.R
+a045185994ff3818715cbf5731721bc0 *tests/strucchange-tests.Rout.save
 7d5d653c3f02a4bdb39c39e40c353d24 *vignettes/strucchange-intro.Rnw
 1dffd21819ed55b690b55990d03426f9 *vignettes/strucchange-intro.Rnw.orig
 b39f80fc445db633a50ff539428eb83f *vignettes/strucchange.bib
