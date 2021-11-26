@@ -1,5 +1,5 @@
 Package: strucchangeRcpp
-Version: 1.5-3-1.0.3
+Version: 1.5-3-1.0.4
 Title: Testing, Monitoring, and Dating Structural Changes: C++ Version
 Authors@R: c(person(given = "Dainius", family = "Masiliunas", role = c("aut", "cre"),
              email = "pastas4@gmail.com", comment = c(ORCID = "0000-0001-5654-1277")),
@@ -37,7 +37,7 @@ URL: https://github.com/bfast2/strucchangeRcpp/
 BugReports: https://github.com/bfast2/strucchangeRcpp/issues
 RoxygenNote: 7.1.1
 NeedsCompilation: yes
-Packaged: 2021-05-25 16:57:14 UTC; dainius
+Packaged: 2021-11-25 15:45:25 UTC; dainius
 Author: Dainius Masiliunas [aut, cre] (<https://orcid.org/0000-0001-5654-1277>),
   Achim Zeileis [aut] (<https://orcid.org/0000-0003-0918-3766>),
   Marius Appel [aut],
@@ -49,4 +49,4 @@ Author: Dainius Masiliunas [aut, cre] (<https://orcid.org/0000-0001-5654-1277>),
   Edgar C. Merkle [ctb]
 Maintainer: Dainius Masiliunas <pastas4@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-05-26 05:10:02 UTC
+Date/Publication: 2021-11-26 16:10:02 UTC
