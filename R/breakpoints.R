@@ -202,7 +202,9 @@ breakpoints.matrix <- function(obj, y, h = 0.15, breaks = c("BIC", "LWZ", "RSS",
                call = match.call(),
                datatsp = datatsp)
   class(RVAL) <- c("breakpointsfull", "breakpoints")
-  RVAL$breakpoints <- breakpoints(RVAL, breaks=breakstat)$breakpoints
+  # If we are asked to find the optimal number of breakpoints according to a statistic, show the optimal one
+  if (!is.null(breakstat))
+    RVAL$breakpoints <- breakpoints(RVAL, breaks=breakstat)$breakpoints
   return(RVAL)
 }
 
@@ -216,6 +218,8 @@ breakpoints.breakpointsfull <- function(obj, breaks = c("BIC", "LWZ", "RSS", "al
       stop("This function is for extracting a single break")
     if (breaks %% 1 != 0)
       stop("Please enter an integer number of breaks")
+  } else if (is.null(breaks)) {
+    breaks <- length(obj$breakpoints)
   } else
   {
     breakstat <- match.arg(breaks)
@@ -324,7 +328,7 @@ summary.breakpoints <- function(object, ...)
 }
 
 summary.breakpointsfull <- function(object, breaks = NULL,
-  sort = TRUE, format.times = NULL, ...)
+  sort = NULL, format.times = NULL, ...)
 {
   if(is.null(format.times)) format.times <- ((object$datatsp[3] > 1) & (object$datatsp[3] < object$nobs))
   if(is.null(breaks)) breaks <- ncol(object$RSS.table)/2
@@ -346,12 +350,14 @@ summary.breakpointsfull <- function(object, breaks = NULL,
     bp <- rbind(NA, bp)
     bd <- rbind(NA, bd)
     bpm <- breakpoints(object, breaks = m)
-    if(sort) {
+    if(is.null(sort) || identical(sort, TRUE)) {
       pos <- apply(outer(bpm$breakpoints, bp[nrow(bp),],
                    FUN = function(x,y) abs(x - y)), 1, which.min)
-      if(length(pos) > unique(length(pos))) {
-        warning("sorting not possible", call. = FALSE)
+      if(length(pos) > length(unique(pos))) {
+        if(!is.null(sort)) warning("sorting not possible", call. = FALSE)
 	sort <- FALSE
+      } else {
+        sort <- TRUE
       }
     }
     if(!sort) pos <- 1:m
