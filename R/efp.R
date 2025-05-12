@@ -1,5 +1,5 @@
 
-efp <- function(X, ti=ti ,...)
+efp <- function(X ,...)
 {
   UseMethod("efp")
 }
@@ -902,12 +902,12 @@ print.efp <- function(x, ...)
     cat("\n")
 }
 
-sctest <- function(x, ti=ti,...)
+sctest <- function(x, ...)
 {
     UseMethod("sctest")
 }
 
-sctest.formula <- function(formula, ti=ti,type = c("Rec-CUSUM", "OLS-CUSUM",
+sctest.formula <- function(formula,type = c("Rec-CUSUM", "OLS-CUSUM",
   "Rec-MOSUM", "OLS-MOSUM", "RE", "ME", "fluctuation", "Score-CUSUM", "Nyblom-Hansen",
   "Chow", "supF", "aveF", "expF"), h = 0.15, alt.boundary = FALSE, functional = c("max", "range",
   "maxL2", "meanL2"), from = 0.15, to = NULL, point = 0.5, asymptotic = FALSE, data = list(), ...)
@@ -965,9 +965,9 @@ sctest.formula <- function(formula, ti=ti,type = c("Rec-CUSUM", "OLS-CUSUM",
 
     if(!((point>k) & (point<(n-k)))) {
 	    if (point <= k) {
-  		stop(paste0("inadmissable change point (zu nah am Anfang der Daten. point: ", point,", k: ",k,", n: ", n,", ti: ",ti,".)"))
+  		stop(paste0("inadmissable change point (zu nah am Anfang der Daten. point: ", point,", k: ",k,", n: ", n,".)"))
 		} else if (point >= n - k) {
-  			stop(paste0("inadmissable change point (zu nah am Ende der Daten. point: ", point,", k: ",k,", n: ", n,", ti: ",ti,".)"))
+  			stop(paste0("inadmissable change point (zu nah am Ende der Daten. point: ", point,", k: ",k,", n: ", n,".)"))
 			}# Hier habe ich was geaendert (CH)
 	    }
     e <- lm.fit(X,y)$residuals
