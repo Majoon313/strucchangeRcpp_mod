@@ -969,6 +969,7 @@ sctest.formula <- function(formula, type = c("Rec-CUSUM", "OLS-CUSUM",
 		} else if (point >= n - k) {
   			stop(paste0("inadmissable change point (zu nah am Ende der Daten. point: ", point,", k: ",k,", n:", n,".)"))
 			}# Hier habe ich was geaendert (CH)
+	    }
     e <- lm.fit(X,y)$residuals
     u <- c(lm.fit(as.matrix(X[(1:point),]),y[1:point])$residuals,
       lm.fit(as.matrix(X[((point+1):n),]),y[((point+1):n)])$residuals)
